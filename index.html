@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faulty Demo Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Microsoft Clarity script goes here -->
+    <!-- Replace 'YOUR_PROJECT_ID' with your actual Clarity project ID after setting up Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "YOUR_PROJECT_ID");
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffcccc;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+            height: 1500px; /* forces scrolling */
+        }
+
+        .fake-button {
+            background-color: #ddd;
+            padding: 10px;
+            display: inline-block;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+
+        .dead-zone {
+            height: 400px;
+            background-color: #f0f0f0;
+        }
+
+        .cta {
+            margin-top: 1000px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .cta button {
+            background-color: #008cba;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 600px) {
+            .content {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .cta button {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Our Broken Site</h1>
+    <div class="fake-button">Click Me!</div> <!-- Rage click candidate -->
+</header>
+
+<div class="dead-zone">
+    <p style="text-align:center; padding-top:150px;">This is a dead zone with no interactive elements.</p>
+</div>
+
+<div class="content">
+    <h2>Confusing Content Section</h2>
+    <p>This area is full of filler text. It's hard to scan and boring.</p>
+    <p><strong>Important:</strong> Try to click elements that do nothing. We are logging your frustration for science.</p>
+</div>
+
+<div class="cta">
+    <button>Sign Up Now</button> <!-- CTA placed too low -->
+</div>
+
+</body>
+</html>
